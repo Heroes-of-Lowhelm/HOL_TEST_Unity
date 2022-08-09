@@ -9,7 +9,9 @@ using TMPro;
 
 public class GoogleSignIn : MonoBehaviour
 {
+#if UNITY_ANDROID
     private PlayGamesClientConfiguration clientConfiguration;
+#endif
     public TextMeshProUGUI t_status;
     public TextMeshProUGUI t_description;
 
@@ -17,7 +19,9 @@ public class GoogleSignIn : MonoBehaviour
 
     private void Start()
     {
+#if UNITY_ANDROID
         ConfigureGPGS();
+#endif
         if (googleSI == null)
         {
             googleSI = this;
@@ -27,11 +31,14 @@ public class GoogleSignIn : MonoBehaviour
             Destroy(gameObject);
         }
     }
+#if UNITY_ANDROID
     internal void ConfigureGPGS()
     {
+
         clientConfiguration = new PlayGamesClientConfiguration.Builder().Build();
+
     }
-    internal void SignIntoGSPS(SignInInteractivity interactivity, PlayGamesClientConfiguration configuration)
+        internal void SignIntoGSPS(SignInInteractivity interactivity, PlayGamesClientConfiguration configuration)
     {
         configuration = clientConfiguration;
         PlayGamesPlatform.InitializeInstance(configuration);
@@ -53,6 +60,7 @@ public class GoogleSignIn : MonoBehaviour
          });
 
     }
+
     public void OnGoogleSignInPress()
     {
         SignIntoGSPS(SignInInteractivity.CanPromptAlways, clientConfiguration);
@@ -63,5 +71,6 @@ public class GoogleSignIn : MonoBehaviour
         t_status.text = "Signed Out";
         t_description.text = string.Empty;
     }
+#endif
 
 }

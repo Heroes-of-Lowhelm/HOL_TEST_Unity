@@ -27,7 +27,9 @@ public class MenuManager : MonoBehaviour
         b_Login.onClick.AddListener(Login);
         b_DeleteAllAccounts.onClick.AddListener(DeleteAllAccounts);
         b_verifyOTP.onClick.AddListener(OnOTPValidate);
+#if UNITY_ANDRIOD
         b_googleSignIn.onClick.AddListener(OnGoogleSignIn);
+#endif
         b_applySignIn.onClick.AddListener(SubmitInfo);
         b_verifySignupOTP.onClick.AddListener(OnEmailVerification);
         b_addPassword.onClick.AddListener(AddPassord);
@@ -143,11 +145,12 @@ public class MenuManager : MonoBehaviour
             t_errorOTPLogin.text = s_wrongOTP;
         }
     }
+#if GOOGLE_ANDROID
     public void OnGoogleSignIn()
     {
         GoogleSignIn.googleSI.OnGoogleSignInPress();
     }
-
+#endif
     public void ResendOTPSignUp()
     {
         AuthenticationManagerTest.authManager.ResendOTPSignUp();
