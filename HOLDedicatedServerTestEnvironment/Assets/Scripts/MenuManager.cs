@@ -138,7 +138,7 @@ public class MenuManager : MonoBehaviour
         bool result = AuthenticationManagerTest.authManager.CheckOTP(i_OTPField.text, false);
         if (result)
         {
-            LoadingManager.ChangeLevel(levelName);
+            LoadingScript.ChangeLevel(levelName);
         }
         else
         {

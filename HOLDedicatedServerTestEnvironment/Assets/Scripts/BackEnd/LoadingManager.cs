@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadingManager : MonoBehaviour
+public class LoadingScript : MonoBehaviour
 {
     public static void ChangeLevel(string levelName)
     {
