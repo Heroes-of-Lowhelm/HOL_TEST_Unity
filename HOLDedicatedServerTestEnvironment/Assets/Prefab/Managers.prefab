@@ -91,9 +91,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcde9b3216c504a4aae9454935675b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_DontDestroyOnLoad: 1
   m_UIManager: {fileID: 3751064444005281825}
   m_ButtonManager: {fileID: 3751064442657128255}
-  m_LoadingManager: {fileID: 0}
+  m_LoadingManager: {fileID: 8276046660312073678}
 --- !u!1 &3751064444005281839
 GameObject:
   m_ObjectHideFlags: 0

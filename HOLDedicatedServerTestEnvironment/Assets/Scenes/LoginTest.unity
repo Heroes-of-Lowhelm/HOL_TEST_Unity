@@ -181,9 +181,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 82c8760de16b33548ba566661dd0ae1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b74eaf92f7e6f1d4a9569f214ffc967a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -834,7 +834,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: b74eaf92f7e6f1d4a9569f214ffc967a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -10343,6 +10343,10 @@ PrefabInstance:
       propertyPath: m_LoadingManager
       value: 
       objectReference: {fileID: 3751064442681425705}
+    - target: {fileID: 3751064443486880079, guid: e8ac2879dcbf9484887d8bb53a34993d, type: 3}
+      propertyPath: m_DontDestroyOnLoad
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3751064444005281825, guid: e8ac2879dcbf9484887d8bb53a34993d, type: 3}
       propertyPath: m_InfoText
       value: 

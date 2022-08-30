@@ -5,7 +5,7 @@
   <files />
   <settings>
     <setting name="androidAbis" value="armeabi-v7a" />
-    <setting name="bundleId" value="com.DefaultCompany.HOL_Test" />
+    <setting name="bundleId" value="com.DefaultCompany.HOLDedicatedServerTestEnvironment" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradlePropertiesTemplateEnabled" value="False" />
@@ -16,6 +16,6 @@
     <setting name="patchAndroidManifest" value="True" />
     <setting name="patchMainTemplateGradle" value="True" />
     <setting name="projectExportEnabled" value="False" />
-    <setting name="useJetifier" value="True" />
+    <setting name="useJetifier" value="False" />
   </settings>
 </dependencies>
